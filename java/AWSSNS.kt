@@ -20,7 +20,7 @@ object AWSSNS {
         }
 
         // Set your Region
-        val clientRegion = Regions.AP_NORTHEAST_2
+        val clientRegion = Regions.AP_NORTHEAST_1
         val snsClient = AmazonSNSClient.builder().withRegion(clientRegion)
             .withCredentials(AWSStaticCredentialsProvider(credentials)).build() as AmazonSNSClient
         val message = "This is your OTP: 12345"
